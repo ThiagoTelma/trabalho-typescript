@@ -11,6 +11,7 @@ import leituraNumeros from "./components/leitura-numeros";
 import numerosPares from "./components/numeros-pares";
 import Tabuada from "./components/tabuada";
 import transformarFahrenheit from "./components/transformar-fahrenheit";
+import validarSenha from "./components/validar-senha";
 import { rl, perguntar } from "./services/readline";
 
 // Menu
@@ -74,6 +75,10 @@ async function menu() {
                 break;
             case "14":
                 await Tabuada();
+                break;
+            case "16":
+                await validarSenha();0
+                
                 break;
             case "17":
                 await adivinhaçãoNumero();

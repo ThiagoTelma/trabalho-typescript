@@ -77,8 +77,7 @@ async function menu() {
                 await Tabuada();
                 break;
             case "16":
-                await validarSenha();0
-                
+                await validarSenha();
                 break;
             case "17":
                 await adivinhaçãoNumero();

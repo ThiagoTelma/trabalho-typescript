@@ -8,6 +8,8 @@ import { classePessoa } from "./components/classe-pessoa";
 import contadorDePalavras from "./components/contar-palavras";
 import encontrarMaiorNumero from "./components/encontrar-maior-numero";
 import leituraNumeros from "./components/leitura-numeros";
+import numerosPares from "./components/numeros-pares";
+import Tabuada from "./components/tabuada";
 import transformarFahrenheit from "./components/transformar-fahrenheit";
 import { rl, perguntar } from "./services/readline";
 
@@ -49,6 +51,9 @@ async function menu() {
             case "4":
                 await transformarFahrenheit();
                 break;
+            case "5":
+                await numerosPares();
+                break;
             case "6":
                 await leituraNumeros();
                 break;
@@ -66,6 +71,9 @@ async function menu() {
                 break;
             case "13":
                 await classeCarro();
+                break;
+            case "14":
+                await Tabuada();
                 break;
             case "17":
                 await adivinhaçãoNumero();

@@ -1,7 +1,8 @@
 import { esperarEnter, perguntar } from "../services/readline";
 
 async function validarSenha() {
-    console.log("=== EXERCÍCIO 16 ===\n");
+    console.log("=== EXERCÍCIO 16 ===");
+    console.log("A senha deve conter: no mínimo 8 caracteres, UMA letra maiúscula, UMA letra minúscula e pelo menos 1 número. \n");
     let senhaValida = false;
 
     do {

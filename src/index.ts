@@ -11,6 +11,7 @@ import contadorDePalavras from "./components/contar-palavras";
 import contarVogais from "./components/contar-vogais";
 import encontrarMaiorNumero from "./components/encontrar-maior-numero";
 import leituraNumeros from "./components/leitura-numeros";
+import numeroPar from "./components/numero-par";
 import numerosPares from "./components/numeros-pares";
 import Tabuada from "./components/tabuada";
 import transformarFahrenheit from "./components/transformar-fahrenheit";
@@ -48,6 +49,9 @@ async function menu() {
         switch (opcao) {
             case "1":
                 await calcularSoma();
+                break;
+            case "2":
+                await numeroPar();
                 break;
             case "3":
                 await calcularMedia();

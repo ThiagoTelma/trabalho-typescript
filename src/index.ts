@@ -1,11 +1,14 @@
 import adivinhaçãoNumero from "./components/adivinhar-numero";
 import arrayCrescente from "./components/array-crescente";
+import calculadora from "./components/calculadora";
+import calcularIMC from "./components/calculadora-imc";
 import calcularMedia from "./components/calcular-media";
 import calcularSoma from "./components/calcular-soma";
 import classeAluno from "./components/classe-aluno";
 import classeCarro from "./components/classe-carro";
 import { classePessoa } from "./components/classe-pessoa";
 import contadorDePalavras from "./components/contar-palavras";
+import contarVogais from "./components/contar-vogais";
 import encontrarMaiorNumero from "./components/encontrar-maior-numero";
 import leituraNumeros from "./components/leitura-numeros";
 import numerosPares from "./components/numeros-pares";
@@ -61,6 +64,12 @@ async function menu() {
             case "7":
                 await encontrarMaiorNumero();
                 break;
+            case "8":
+                await contarVogais();
+                break;
+            case "9":
+                await calculadora();
+                break;
             case "10":
                 await arrayCrescente();
                 break;
@@ -76,6 +85,9 @@ async function menu() {
             case "14":
                 await Tabuada();
                 break;
+            case "15":
+                await calcularIMC();
+                break;
             case "16":
                 await validarSenha();
                 break;
@@ -89,7 +101,7 @@ async function menu() {
                 console.log("Encerrando...");
                 break;
             default:
-                console.log("Opção ainda não implementada.\n");
+                console.log("Opção não existe...\n");
         }
     } while (opcao !== "0");
 

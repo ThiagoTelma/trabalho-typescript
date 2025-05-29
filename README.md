@@ -1,6 +1,6 @@
 # Projeto - Lista de Exercícios TypeScript
 
-**Curso:** Análise e Desenvolvimento de Sistemas  
+**Curso:** Engenharia de Software  
 **Disciplina:** Programação Front-End  
 **Professor:** José Carlos Domingues Flores   
 

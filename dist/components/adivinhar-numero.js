@@ -21,7 +21,8 @@ async function adivinhaçãoNumero() {
             console.log("Menor!");
         }
         else {
-            console.log(`Parabéns! Você acertou o número ${numeroSorteado}!`);
+            console.log(`Parabéns! Você acertou o número ${numeroSorteado}!\n`);
+            await (0, readline_1.esperarEnter)();
         }
     }
 }

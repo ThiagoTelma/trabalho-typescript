@@ -34,6 +34,7 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.rl = void 0;
+exports.esperarEnter = esperarEnter;
 exports.perguntar = perguntar;
 const readline = __importStar(require("readline"));
 // Setup de entrada do usuário
@@ -41,6 +42,13 @@ exports.rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
+function esperarEnter() {
+    return new Promise((resolve) => {
+        exports.rl.question("Pressione Enter para continuar...", () => {
+            resolve();
+        });
+    });
+}
 // Função para ler entrada do usuário
 function perguntar(pergunta) {
     return new Promise((resolve) => exports.rl.question(pergunta, resolve));

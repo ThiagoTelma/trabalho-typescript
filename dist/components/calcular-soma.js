@@ -13,7 +13,8 @@ async function calcularSoma() {
     }
     else {
         const soma = n1 + n2;
-        console.log(`Resultado: ${soma}`);
+        console.log(`Resultado: ${soma}\n`);
+        await (0, readline_1.esperarEnter)();
     }
 }
 exports.default = calcularSoma;

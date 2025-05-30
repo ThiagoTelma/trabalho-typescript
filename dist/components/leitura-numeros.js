@@ -16,6 +16,7 @@ async function leituraNumeros() {
             numeros.push(num);
         }
     }
-    console.log("Números digitados:", numeros);
+    console.log("Números digitados: \n", numeros);
+    await (0, readline_1.esperarEnter)();
 }
 exports.default = leituraNumeros;

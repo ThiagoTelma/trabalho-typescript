@@ -11,7 +11,8 @@ async function transformarFahrenheit() {
     }
     else {
         const fahrenheit = (celsius * 9) / 5 + 32;
-        console.log(`Temperatura em Fahrenheit: ${fahrenheit.toFixed(2)}°F`);
+        console.log(`Temperatura em Fahrenheit: ${fahrenheit.toFixed(2)}°F\n`);
+        await (0, readline_1.esperarEnter)();
     }
 }
 exports.default = transformarFahrenheit;

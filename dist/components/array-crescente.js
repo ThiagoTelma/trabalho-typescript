@@ -14,7 +14,8 @@ async function arrayCrescente() {
     }
     else {
         numeros.sort((a, b) => a - b);
-        console.log("Números ordenados:", numeros);
+        console.log("Números ordenados:\n", numeros);
+        await (0, readline_1.esperarEnter)();
     }
 }
 exports.default = arrayCrescente;

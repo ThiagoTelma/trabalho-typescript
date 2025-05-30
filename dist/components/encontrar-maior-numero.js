@@ -12,6 +12,7 @@ async function encontrarMaiorNumero() {
     else {
         const maior = Math.max(...numeros);
         console.log(`O maior número é: ${maior}\n`);
+        await (0, readline_1.esperarEnter)();
     }
 }
 exports.default = encontrarMaiorNumero;

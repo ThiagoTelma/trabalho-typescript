@@ -11,5 +11,6 @@ async function calcularMedia() {
     }
     const media = notas.reduce((acc, nota) => acc + nota, 0) / notas.length;
     console.log(`A média das notas é: ${media.toFixed(2)}\n`);
+    await (0, readline_1.esperarEnter)();
 }
 exports.default = calcularMedia;

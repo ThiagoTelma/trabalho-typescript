@@ -33,4 +33,7 @@ Este projeto contém a implementação dos 18 exercícios propostos na disciplin
 git clone https://github.com/ThiagoTelma/trabalho-typescript
 cd seu-repositorio
 npm install
+npm start
+ou
+npm run server ( para rodar em ambiente de desenvolvimento ).
 
